@@ -3,3 +3,12 @@
 @tailwind utilities;
 
 
+@layer utilities {
+    .bg-hero-mobile {
+        background-image: url(../public/mobile/image-hero.jpg);
+    }
+
+    .bg-hero-desktop {
+        background-image: url(../public/desktop/image-hero.jpg);
+    }
+}
