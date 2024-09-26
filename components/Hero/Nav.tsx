@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const menuItems = [
   {
@@ -32,16 +32,26 @@ const menuItems = [
 
 
 const Nav = () => {
-    const [toggle,setToggle] = useState(false)
+    const [toggle,setToggle] = useState(false);
+
+    useEffect(() => {
+      const listenScroll = () => {
+        if(window.scrollY) {
+          setToggle(false)
+        }
+      }
+      window.addEventListener("scroll", listenScroll);
+
+    })
 
     const toggleMenu = (a:boolean) => {
-        setToggle(a)
+        setToggle(a);
     }
+
   return (
     <div className=" flex items-center justify-between">
       <div>
         <a className=" cursor-pointer">
-          {" "}
           <img src="logo.svg" alt="logo" />{" "}
         </a>
       </div>
@@ -49,7 +59,7 @@ const Nav = () => {
     <div className="hidden lg:flex">
      <ul className=" flex gap-8 text-white">
         {menuItems.map((item) => (
-            <li key={item.id}><a href={item.link}>{item.name}</a></li>
+            <li className=" hover:scale-105 hover:text-black duration-200 ease-out " key={item.id}><a href={item.link}>{item.name}</a></li>
         ))}
      </ul>
     </div>
@@ -63,7 +73,7 @@ const Nav = () => {
       {/* Toggle menu */}
 
       {toggle && (
-        <div onClick={() => toggleMenu(false)} className="w-full h-[100vh] absolute top-0 right-0 bg-black  px-8 py-8">
+        <div onClick={() => toggleMenu(false)} className="w-full h-full absolute top-0 right-0 bottom-0 bg-black  px-8 py-8">
           <div className="flex items-center justify-between">
             <a>
               <img src="logo.svg" alt="logo"></img>
