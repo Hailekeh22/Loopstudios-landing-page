@@ -1,7 +1,7 @@
 
 const Description = () => {
   return (
-    <div className=" flex-col items-center justify-center bg-white lg:p-12 lg:absolute lg:w-2/4 lg:right-24 lg:bottom-0">
+    <div className=" flex-col items-center justify-center bg-white lg:pb-20 lg:pt-10 lg:px-10 lg:absolute lg:w-2/4 lg:right-24 lg:bottom-0">
       <div>
         <div className="flex justify-center py-6 lg:px-14 lg:justify-start">
           <div className=" font-thin lg:text-left text-center flex-col">

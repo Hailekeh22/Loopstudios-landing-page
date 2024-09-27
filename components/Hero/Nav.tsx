@@ -59,7 +59,7 @@ const Nav = () => {
     <div className="hidden lg:flex">
      <ul className=" flex gap-8 text-white">
         {menuItems.map((item) => (
-            <li className=" hover:scale-105 hover:text-black duration-200 ease-out " key={item.id}><a href={item.link}>{item.name}</a></li>
+            <li className=" hover:scale-105 hover:text-black duration-300 ease-out " key={item.id}><a href={item.link}>{item.name}</a></li>
         ))}
      </ul>
     </div>
