@@ -10,7 +10,7 @@ const Description = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="flex justify-center px-14">
+          <div className="flex justify-center px-4 lg:px-14">
             <p className=" text-center lg:text-left text-xl font-semibold text-gray-500 leading-relaxed">
               Founded in 2011, Loopstudios has been producing world-class
               virtual reality projects for some of the best companies around the
