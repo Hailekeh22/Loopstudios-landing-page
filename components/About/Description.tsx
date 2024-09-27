@@ -5,8 +5,8 @@ const Description = () => {
       <div>
         <div className="flex justify-center py-6 lg:px-14 lg:justify-start">
           <div className=" font-thin lg:text-left text-center flex-col">
-            <p className="text-5xl">THE LEADER IN </p>
-            <p className="text-5xl">INTERACTIVE VR</p>
+            <p className="text-4xl">THE LEADER IN </p>
+            <p className="text-4xl">INTERACTIVE VR</p>
           </div>
         </div>
         <div className="flex justify-center">
